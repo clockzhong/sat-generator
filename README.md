@@ -8,6 +8,7 @@ A tool for generating hard SAT instances (in the DIMACS format) based on the int
 
 The main contributor:
 * Sergejs Kozlovičs
+* Clock ZHONG
 
 ## The Paper and How to Cite It
 
@@ -50,3 +51,14 @@ pip3 install python-sat
 ```
 
 Then just play with `Test.py`.
+
+## Setup
+Create virtual environment: SAT_Gen
+```bash
+python3 -m venv SAT_Gen
+```
+Activate virtual environment: SAT_Gen, and install necessary packages
+```bash
+. ./SAT_Gen/bin/activate
+pip3 install python-sat
+```
