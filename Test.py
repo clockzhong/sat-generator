@@ -69,7 +69,7 @@ def test_negation_with_solver(p):
     print("clauses (" + str(len(clauses)) + ")=", clauses)
     print("Solving: look at ", list(reversed(list(map(lambda x: str(x), p.literals)))))
 
-    with Solver(name="Cadical", bootstrap_with=clauses, use_timer=True) as solver:
+    with Solver(name="Cadical153", bootstrap_with=clauses, use_timer=True) as solver:
         is_sat = solver.solve()
         print("Cadical result: ", is_sat, '{0:.4f}s'.format(solver.time()), len(clauses), " clauses")
         print(solver.get_model())
@@ -265,7 +265,7 @@ def test_product_with_solver(n, p, q, optimize = False):
 
     df.store(str(p)+" "+str(q))
 
-    with Solver(name="Cadical", bootstrap_with=clauses, use_timer=True) as solver:
+    with Solver(name="Cadical153", bootstrap_with=clauses, use_timer=True) as solver:
         is_sat = solver.solve()
         print("Cadical result: ", is_sat, '{0:.4f}s'.format(solver.time()), len(clauses), " clauses")
         print(solver.get_model())
