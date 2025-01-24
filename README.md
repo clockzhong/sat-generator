@@ -44,15 +44,8 @@ The resulting file will be named `<n>.cnf` and will be stored according to the D
 
 ## Testing
 
-For testing purposes, you will need the `python-sat` library:
+For testing purposes, you will need setup its running environment firstly:
 
-```bash
-pip3 install python-sat
-```
-
-Then just play with `Test.py`.
-
-## Setup
 Create virtual environment: SAT_Gen
 ```bash
 python3 -m venv SAT_Gen
@@ -60,5 +53,11 @@ python3 -m venv SAT_Gen
 Activate virtual environment: SAT_Gen, and install necessary packages
 ```bash
 . ./SAT_Gen/bin/activate
-pip3 install python-sat
+pip3 install -e .
 ```
+
+Then just play with `Test.py`.
+```bash
+./Test.py
+```
+
