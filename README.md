@@ -46,12 +46,9 @@ The resulting file will be named `<n>.cnf` and will be stored according to the D
 
 For testing purposes, you will need setup its running environment firstly:
 
-Create virtual environment: SAT_Gen
+Create virtual environment: SAT_Gen, activate it, and install necessary packages with following commands:
 ```bash
 python3 -m venv SAT_Gen
-```
-Activate virtual environment: SAT_Gen, and install necessary packages
-```bash
 . ./SAT_Gen/bin/activate
 pip3 install -e .
 ```
